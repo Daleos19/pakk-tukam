@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from Tukam to You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="title">Haii</h1>
+        
+        <input type="text" id="nameInput" placeholder="Masukkan nama..." />
+        <button onclick="askBirthDate()">Submit</button>
+
+        <input type="date" id="birthDateInput" style="display: none;" />
+        <button id="submitBirthDate" onclick="sayHello()" style="display: none;">Submit</button>
+
+        <p id="greetingText"></p>
+        <div id="countdownContainer" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

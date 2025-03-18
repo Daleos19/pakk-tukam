@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body, html {
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    background: linear-gradient(-45deg, #f1ca89, #f29191, #907fa4, #4aa96c);
+    background-size: 400% 400%;
+    animation: animasiBegron 15s ease infinite;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Menghindari scroll yang tidak perlu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #ff4081;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 10px;
+    outline: none;
+    width: 90%;
+    text-align: center;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #ff4081;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e03570;
+    transform: scale(1.05);
+}
+
+#greetingText {
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 1; /* Teks langsung muncul */
+}
+
+#websiteButton {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#websiteButton:hover {
+    background-color: #ff3366;
+    transform: scale(1.05);
+}
+
+#birthDateInput, #submitBirthDate {
+    display: none;
+}
+
+#countdownContainer {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    background: #ff4081;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-label {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* Animasi latar belakang */
+@keyframes animasiBegron {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
